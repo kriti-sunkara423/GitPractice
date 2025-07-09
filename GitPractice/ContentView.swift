@@ -15,17 +15,22 @@ struct ContentView: View {
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .foregroundColor(Color.pink)
+                    .padding()
                 HStack {
                     Image("family silhouette")
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fit)
+                        .padding()
                     Text("this is a pic")
+                        .padding()
                 }
                 HStack {
                     Image("friends silhouette")
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fit)
+                        .padding()
                     Text("and this is a pic")
+                        .padding()
                 }
             }
         }
