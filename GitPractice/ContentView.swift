@@ -9,13 +9,26 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Wassup")
+        ZStack {
+            VStack {
+                Text("about kriti")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.pink)
+                HStack {
+                    Image("family silhouette")
+                        .resizable(resizingMode: .stretch)
+                        .aspectRatio(contentMode: .fit)
+                    Text("this is a pic")
+                }
+                HStack {
+                    Image("friends silhouette")
+                        .resizable(resizingMode: .stretch)
+                        .aspectRatio(contentMode: .fit)
+                    Text("and this is a pic")
+                }
+            }
         }
-        .padding()
     }
 }
 
